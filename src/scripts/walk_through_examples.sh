@@ -7,6 +7,8 @@ PROGS=(
     "./mqtt-example"
     "./mqtt-capture"
     "./mqtt-perform"
+    "./mqtt-ls1021-capture"
+    "./mqtt-ls1021-perform"
     "./mqtt_rrpc-example unittest"
     "./shadow-example"
     "./sdk-testsuites"

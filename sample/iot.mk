@@ -3,10 +3,12 @@ LDFLAGS             := -liot_sdk
 LDFLAGS             += -liot_platform
 
 ifeq (y,$(strip $(FEATURE_MQTT_COMM_ENABLED)))
-TARGET              += mqtt-example mqtt_rrpc-example mqtt-perform mqtt-capture
+TARGET              += mqtt-example mqtt_rrpc-example mqtt-perform mqtt-capture mqtt-ls1021-perform mqtt-ls1021-capture
 SRCS_mqtt-example   := mqtt/mqtt-example.c
 SRCS_mqtt-capture   := mqtt/mqtt-capture.c
 SRCS_mqtt-perform   := mqtt/mqtt-perform.c
+SRCS_mqtt-ls1021-perform   := mqtt/mqtt-ls1021-perform.c
+SRCS_mqtt-ls1021-capture   := mqtt/mqtt-ls1021-capture.c
 SRCS_mqtt_rrpc-example := mqtt/mqtt_rrpc-example.c
 
     ifeq (y, $(strip $(FEATURE_OTA_ENABLED)))
